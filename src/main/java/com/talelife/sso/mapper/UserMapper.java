@@ -1,25 +1,25 @@
-package com.talelife.auth.service;
-import com.talelife.auth.model.User;
+package com.talelife.sso.mapper;
+import com.talelife.sso.model.User;
 import java.util.List;
 /**
- * 用户业务接口
+ * 用户数据操作接口
  * date: 2017-11-15 14:18:56
  * 
  * @author Liuweiyao
  * @version 1.0
  */
-public interface UserService{
+public interface UserMapper{
 	List<User> findAll();
 	
 	List<User> findList(User user);
 	
 	int add(User user);
 	
-	int delete(Long id);
-	
 	int update(User user);
 	
 	User findByPK(Long id);
 	
+	int delete(Long id);
+
 	User findByUsername(String username);
 }

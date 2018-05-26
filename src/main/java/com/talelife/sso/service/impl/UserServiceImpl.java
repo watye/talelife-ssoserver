@@ -1,9 +1,9 @@
-package com.talelife.auth.service.impl;
+package com.talelife.sso.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.talelife.auth.service.UserService;
-import com.talelife.auth.mapper.UserMapper;
-import com.talelife.auth.model.User;
+import com.talelife.sso.service.UserService;
+import com.talelife.sso.mapper.UserMapper;
+import com.talelife.sso.model.User;
 import javax.annotation.Resource;
 import java.util.List;
 /**

@@ -1,4 +1,4 @@
-package com.talelife.auth.model;
+package com.talelife.sso.model;
 import java.io.Serializable;
 import java.util.Date;
 /**
@@ -9,6 +9,11 @@ import java.util.Date;
  * @version 1.0
  */
 public class User implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -498136436612557333L;
+
 	//
 	private Long id;
 	

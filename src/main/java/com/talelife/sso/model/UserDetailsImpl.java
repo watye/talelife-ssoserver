@@ -1,4 +1,4 @@
-package com.talelife.auth.model;
+package com.talelife.sso.model;
 
 import java.util.Collection;
 

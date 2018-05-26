@@ -1,4 +1,4 @@
-package com.talelife.auth.service.impl;
+package com.talelife.sso.service.impl;
 
 import javax.annotation.Resource;
 
@@ -8,9 +8,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.oauth2.client.test.OAuth2ContextConfiguration;
 import org.springframework.stereotype.Service;
 
-import com.talelife.auth.model.User;
-import com.talelife.auth.model.UserDetailsImpl;
-import com.talelife.auth.service.UserService;
+import com.talelife.sso.model.User;
+import com.talelife.sso.model.UserDetailsImpl;
+import com.talelife.sso.service.UserService;
 @Service
 public class UserDetailServiceImpl implements UserDetailsService {
 

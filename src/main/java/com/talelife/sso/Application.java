@@ -1,4 +1,4 @@
-package com.talelife.auth;
+package com.talelife.sso;
 
 import java.security.KeyPair;
 
@@ -29,17 +29,17 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-import com.talelife.auth.model.SysPasswordEncoder;
+import com.talelife.util.SysPasswordEncoder;
 
 @SpringBootApplication
 @EnableAutoConfiguration
 @Controller
 @SessionAttributes("authorizationRequest")
-@MapperScan("com.talelife.auth.mapper")
-public class AuthserverApplication extends WebMvcConfigurerAdapter {
+@MapperScan("com.talelife.sso.mapper")
+public class Application extends WebMvcConfigurerAdapter {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AuthserverApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 	
 	@Override

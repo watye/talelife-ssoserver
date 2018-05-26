@@ -6,9 +6,9 @@
   @author Liuweiyao
   @version 1.0
 -->
-<mapper namespace="com.talelife.auth.mapper.UserMapper">
+<mapper namespace="com.talelife.sso.mapper.UserMapper">
 	<!-- 用户对象映射 -->
-	<resultMap id="userMap" type="com.talelife.auth.model.User">
+	<resultMap id="userMap" type="com.talelife.sso.model.User">
 			<!--  -->
 				<id property="id" column="id" javaType="Long" />
 					<!-- 用户名 -->
@@ -24,7 +24,7 @@
 	  </sql>
 	
 	<!-- 新增用户 -->
-	<insert id="add" parameterType="com.talelife.auth.model.User" useGeneratedKeys="true" keyProperty="id">
+	<insert id="add" parameterType="com.talelife.sso.model.User" useGeneratedKeys="true" keyProperty="id">
 		INSERT INTO `sys_user` (
 				`username`
 				,`password`
@@ -41,7 +41,7 @@
 	</delete>
 	
 	<!-- 修改用户 -->
-	<update id="update" parameterType="com.talelife.auth.model.User">
+	<update id="update" parameterType="com.talelife.sso.model.User">
 		UPDATE `sys_user`
 		<set>
 			<if test="username != null">`username`=#{username},</if>
