@@ -15,7 +15,7 @@ spring:
 mybatis:
   config-locations: classpath:mybatis-config.xml
   mapper-locations: classpath:com/talelife/auth/mapper/*.xml
-  type-aliases-package: com.talelife.auth.model
+  type-aliases-package: com.talelife.sso.model
 #pagehelper分页插件配置
 pagehelper:
   helperDialect: mysql
@@ -27,7 +27,7 @@ logging:
   level.org.springframework.web: debug
   level.org.springframework.transaction: debug
   level.org.mybatis: debug
-  level.com.talelife.auth: debug
+  level.com.talelife.sso: debug
   debug: false
 security:
   ignored: /css/**,/js/**,/favicon.ico,/webjars/**
